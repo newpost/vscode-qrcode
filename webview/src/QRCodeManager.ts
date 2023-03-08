@@ -55,6 +55,7 @@ export class QRCodeManager {
     private onText = (text: string): void => {
         console.log('text')
         this.text = text
+        this.drawQRCodeWithText()
     }
 
     private onConfig = (config: Configuration): void => {
